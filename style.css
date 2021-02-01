@@ -165,6 +165,7 @@ font-weight: 600;
 /* all similar content styling code */
 section{
     padding: 100px 0;
+    height: 105vh;
 }
 .about, .services, .skills, .projects, .contact, footer{
     font-family: 'Poppins', sans-serif;
@@ -368,6 +369,7 @@ justify-content:center;
     padding: 20px 25px;
     cursor: pointer;
     transition: all 0.3s ease;
+    margin: 50px 100px;
 }
 .services .serv-content .card:hover{
     background: #ff7300;
@@ -459,6 +461,9 @@ justify-content:center;
 .skills-content .right .js::before{
     width: 82%;
 }
+.skills-content .right .rjs::before{
+    width: 60%;
+}
 .skills-content .right .csharp::before{
     width: 74%;
 }
@@ -470,35 +475,44 @@ justify-content:center;
 }
 
 /* projects section start */
+
 .projects .title::after{
     content: "what i do";
 }
-.projects .carousel .card{
+.projects .kotak .card{
     background: #222;
     border-radius: 6px;
     padding: 25px 35px;
     text-align: center;
     transition: all 0.3s ease;
+    width: calc(33% - 20px);
+    display: inline-block;
+    justify-content: space-between;
+    margin: 50px 100px;
 }
-.projects .carousel .card:hover{
+.projects .kotak a{
+    color: #f4f4f4;
+}
+
+.projects .kotak .card:hover{
     background: #ff7300;
 }
-.projects .carousel .card .box{
+.projects .kotak .card .box{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     transition: all 0.3s ease;
 }
-.projects .carousel .card:hover .box{
+.projects .kotak .card:hover .box{
     transform: scale(1.05);
 }
-.projects .carousel .card .text{
+.projects .kotak .card .text{
     font-size: 25px;
     font-weight: 500;
     margin: 10px 0 7px 0;
 }
-.projects .carousel .card img{
+.projects .kotak .card img{
     height: 150px;
     width: 150px;
     object-fit: cover;
@@ -506,29 +520,8 @@ justify-content:center;
     border: 5px solid #ff7300;
     transition: all 0.3s ease;
 }
-.projects .carousel .card:hover img{
+.projects .kotak .card:hover img{
     border-color: #f4f4f4;
-}
-.owl-dots{
-    text-align: center;
-    margin-top: 20px;
-}
-.owl-dot{
-    height: 13px;
-    width: 13px;
-    margin: 0 5px;
-    outline: none!important;
-    border-radius: 50%;
-    border: 2px solid #ff7300!important;
-    transition: all 0.3s ease;
-}
-.owl-dot.active{
-    width: 35px;
-    border-radius: 14px;
-}
-.owl-dot.active,
-.owl-dot:hover{
-    background: #ff7300!important;
 }
 
 
