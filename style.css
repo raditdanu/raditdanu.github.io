@@ -5,6 +5,7 @@
     box-sizing: border-box;
     text-decoration: none;
 }
+
 html{
     scroll-behavior: smooth;
 }
@@ -80,7 +81,7 @@ font-weight: 600;
 
 /* menu button styling */
 .menu-btn i.active::before{
-    content: "#f00d";
+    content: "Menu";
 }
 .scroll-up-btn{
     position: fixed;
@@ -116,10 +117,6 @@ font-weight: 600;
     color: #f4f4f4;
     min-height:  500px;
     font-family: 'Ubuntu', sans-serif;
-
-   
-
-    
 }
 
 
@@ -310,12 +307,7 @@ justify-content:center;
 .about .about-content .left{
     width: 45%;
 }
-/* .about .about-content .left img{
-    height: 400px;
-    width: 400px;
-    object-fit: cover;
-    border-radius: 6px;
-} */
+
 .about .about-content .right{
     width: 55%;
 }
@@ -731,6 +723,114 @@ footer span a:hover{
     
 }
 
+@media (max-width: 740px){
+    body{
+        width: 100%;
+    }
+    
+    .navbar{
+        width: 100%;
+    }
+    .navbar.sticky{
+        height: 70px;
+    }
+    .navbar.sticky .logo a span{
+        height: 70px;
+    }
+    .navbar.sticky .menu li a:hover{
+        height: 70px;
+    }
+    .navbar .menu{
+        position: fixed;
+        height: 100%;
+        width: 100%;
+        left: -100%;
+        top: 0;
+        background: #041121;
+        text-align: center;
+        padding-top: 80px;
+        transition: all 0.3s ease;
+    }
+    .navbar .menu.active{
+        left: 0;
+    }
+    .navbar .menu li{
+        display: block;
+    }
+    .navbar .menu li a{
+        display: inline-block;
+        margin: 20px 0;
+        font-size: 25px;
+    }
+    
+    
+    .home{
+        height: 100%;
+        width: 100%;
+    }
+    .home .home-content .text-2{
+        font-size: 50px;
+    }
+    
+    .home .home-content .text-3{
+        font-size: 27px;
+    }
+    .about{
+        height: 100%;
+        width: 100%;
+    }
+
+    .about .about-content .right .text{
+        font-size: 18px;
+        
+    }
+
+    .navigation-manual{
+        position: absolute;
+        width: 300px;
+        margin-top: -20px;
+        display: flex;
+        justify-content:center;
+        
+        }
+
+        .navigation-auto{
+            position: absolute;
+        width: 300px;
+        margin-top: 380px;
+        display: flex;
+        justify-content:center;
+        }
+
+    .services{
+        height: 100%;
+        width: 100%;
+    }
+
+    .services .serv-content .card{
+        margin-left: 175px;
+    }
+
+
+    .skills{
+        height: 100%;
+        width: 100%;
+    }
+    .projects{
+        height: 100%;
+        width: 100%;
+    }
+
+    .projects .kotak .card{
+        width: 200px;
+        margin-left: 220px;
+    }
+    .contact{
+        height: 100%;
+        width: 100%;
+    }
+}
+
 @media (max-width: 690px){
     .max-width{
         padding: 0 23px;
@@ -757,7 +857,154 @@ footer span a:hover{
     .home .home-content .text-3{
         font-size: 27px;
     }
+    .max-width{
+        padding: 0 23px;
+    }
+    .services .serv-content .card
+    {
+        width: 100%;
+    }
+    .skills .skills-content .column,
+    .contact .contact-content .column{
+        width: 100%;
+        margin-bottom: 35px;
+        display: inline-block;
+        height: 100%;
+    }
+    .navbar .menu{
+        position: fixed;
+        height: 100vh;
+        width: 100%;
+        left: -100%;
+        top: 0;
+        background: #041121;
+        text-align: center;
+        padding-top: 80px;
+        transition: all 0.3s ease;
+    }
+    .navbar .menu.active{
+        left: 0;
+    }
+    .navbar .menu li{
+        display: block;
+    }
+    .navbar .menu li a{
+        display: inline-block;
+        margin: 20px 0;
+        font-size: 25px;
+    }
+    @media (max-width: 360px){
+        
+        body{
+            width: 100%;
+        }
+        
+        .navbar{
+            width: 95%;
+        }
+        .navbar.sticky{
+            height: 70px;
+        }
+        .navbar.sticky .logo a span{
+            height: 70px;
+        }
+        .navbar.sticky .menu li a:hover{
+            height: 70px;
+        }
+        .navbar .menu{
+            position: fixed;
+            height: 100%;
+            width: 100%;
+            left: -100%;
+            top: 0;
+            background: #041121;
+            text-align: center;
+            padding-top: 80px;
+            transition: all 0.3s ease;
+        }
+        .navbar .menu.active{
+            left: 0;
+        }
+        .navbar .menu li{
+            display: block;
+        }
+        .navbar .menu li a{
+            display: inline-block;
+            margin: 20px 0;
+            font-size: 25px;
+        }
+        
+        
+        .home{
+            height: 100%;
+            width: 100%;
+        }
+        .home .home-content .text-2{
+            font-size: 50px;
+        }
+        
+        .home .home-content .text-3{
+            font-size: 27px;
+        }
+        .about{
+            height: 100%;
+            width: 100%;
+        }
+
+        .about .about-content .right .text{
+            font-size: 18px;
+            
+        }
+
+        .navigation-manual{
+            position: absolute;
+            width: 300px;
+            margin-top: -20px;
+            display: flex;
+            justify-content:center;
+            
+            }
+
+            .navigation-auto{
+                position: absolute;
+            width: 300px;
+            margin-top: 380px;
+            display: flex;
+            justify-content:center;
+            }
+
+        .services{
+            height: 100%;
+            width: 100%;
+        }
+
+        .services .serv-content .card{
+            margin-left: 75px;
+        }
+
+
+        .skills{
+            height: 100%;
+            width: 100%;
+        }
+        .projects{
+            height: 100%;
+            width: 100%;
+        }
+
+        .projects .kotak .card{
+            width: 200px;
+            margin-left: 65px;
+        }
+        .contact{
+            height: 100%;
+            width: 100%;
+        }
+    }
 }}
+
+
+
 .rde {
     position: relative;
     display: flex;
