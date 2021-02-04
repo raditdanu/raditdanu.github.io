@@ -562,11 +562,13 @@ justify-content:center;
 .contact .right form .fields{
     display: flex;
 }
+
 .contact .right form .field,
 .contact .right form .fields .field{
     height: 45px;
     width: 100%;
     margin-bottom: 15px;
+    
 }
 .contact .right form .textarea{
     height: 80px;
@@ -1029,7 +1031,7 @@ color: #222;
 .rde li::before{
 font-family: fontAwesome;
 position: absolute;
-top: -4px;
+top: 0px;
 left: 0;
 font-size: 2em;
 height: 0;
@@ -1037,15 +1039,15 @@ overflow: hidden;
 transition: 0.5s ease-in-out;
 }
 .rde li:nth-child(1)::before{
-content: '\f16d';
-color: #e1306c;
-border-bottom: 4px solid #e1306c;
+content: '\f08c';
+color:#2867b2;
+border-bottom: 4px solid #2867b2;
 pointer-events: none;
 }
 .rde li:nth-child(2)::before{
-content: '\f230';
-color: #3B5998;
-border-bottom: 4px solid#3B5998;
+content: '\f09b';
+color:#f6f8fa;
+border-bottom: 4px solid#f6f8fa;
 pointer-events: none;
 }
 .rde li:nth-child(3)::before{
