@@ -208,8 +208,7 @@ section .title::after{
 
 /* about section styling */
 .slider{
-    /* width: 800px;
-    height: 500px; */
+    
     border-radius: 10px;
     overflow: hidden;
     width: 400px;
@@ -455,12 +454,6 @@ justify-content:center;
 }
 .skills-content .right .rjs::before{
     width: 60%;
-}
-.skills-content .right .csharp::before{
-    width: 74%;
-}
-.skills-content .right .cpp::before{
-    width: 69%;
 }
 .skills-content .right .mssql::before{
     width: 76%;
@@ -1065,61 +1058,3 @@ pointer-events: none;
 .rde li:hover::before{
 height: 100%;
 }
-  
- 
-  /* .fa:hover {
-    
-    background: none;
-  }
-  
-
-  
-
-  .fa-facebook {
-    background: none;
-    
-    color: #f4f4f4;
-  }
-
-  .fa-facebook::before{
-      font-family: fontAwesome;
-      overflow: hidden;
-      transition: all 0.5s ease-in-out;
-      content: '\f230';
-      color: #3B5998;
-      border-bottom: 4px solid #3B5998;
-
-  }
-  .fa-facebook:hover::before{
-      height: 100%;
-  }
-  .fa-instagram {
-    background: none;
-    color: white;
-  
-  }
-  .fa-instagram:hover{
-      color: #e1306c;
-      transform: scale(1.05);
-  }
-
-  .fa-spotify:hover{
-   color:  #1db954;
-   transform: scale(1.05);
-  }
-  .fa-youtube {
-    background: none;
-    color: white;
-  
-  }
-  .fa-youtube:hover{
-      color: #bb0000;
-      transform: scale(1.05);
-      
-  }
-  .fa-spotify {
-    
-    background: none;
-    color: white;
-    
-  } */
