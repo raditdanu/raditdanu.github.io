@@ -647,6 +647,8 @@ footer span a:hover{
         width: 350px;
 }
 
+}
+
 @media (max-width: 991px){
     .max-width{
         padding: 0 50px;
@@ -888,6 +890,7 @@ footer span a:hover{
         margin: 20px 0;
         font-size: 25px;
     }
+}
     @media (max-width: 360px){
         
         body{
@@ -996,7 +999,7 @@ footer span a:hover{
             width: 100%;
         }
     }
-}}
+
 
 
 
@@ -1024,7 +1027,7 @@ color: #222;
 .rde li::before{
 font-family: fontAwesome;
 position: absolute;
-top: 0px;
+top: -3px;
 left: 0;
 font-size: 2em;
 height: 0;
