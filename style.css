@@ -1028,8 +1028,8 @@ color: #222;
 .rde li::before{
 font-family: fontAwesome;
 position: absolute;
-top: -3px;
-left: 0;
+top: 0px;
+left: 0.1px;
 font-size: 2em;
 height: 0;
 overflow: hidden;
